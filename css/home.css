@@ -1,0 +1,223 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*********************** General Section ******************/
+body
+{
+    line-height: 1.4rem;
+    font-family: Helvetica, sans-serif;
+    min-width: 1200px
+  
+}
+
+/*********************** Specifics Section ******************/
+a
+{
+    text-decoration: none;
+    
+}
+ li :hover
+ {
+    text-decoration: underline;
+ }
+
+/*********************** Header Section ******************/
+
+header 
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #fffc00;
+    font-weight: bold;
+    min-width: 1200px;
+    position: sticky;
+    top: 0;
+}
+
+ul > li /*-- Will apply to Footer Tag as well */
+{
+    display: inline-block;
+    padding: 1rem;
+    
+}
+
+#header-2
+{
+    background-color: #fff; /* rule */
+}
+
+/*********************** Main/Section 1/5 -  Join Team Snap -  ******************/
+
+#main-section-one
+{
+    background-image: url(../img/img-header.jpg); /* rule */
+    background-repeat: no-repeat;
+    background-position: center center; /* rule */
+    background-size: cover;
+    height:100px; /* rule */
+    min-width: 1200px; 
+    color: #fff;
+    text-align: center; 
+    padding: 15rem 0 20rem 0;
+}
+
+#main-section-one h1
+{   
+   font-size: 3rem;
+   margin-bottom: 1rem;
+}
+
+#main-section-one > p
+{   
+    display: inline-block;
+    background-color: #fffc00;
+    /* Rules */ 
+        color: #000;
+        border: none;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-top: 1rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+}
+
+
+/*********************** Main/Section 2/5 -  Who We Are -  ******************/
+#main-section-two
+{
+    text-align: center; /* rule */
+    padding: 5rem;
+    background-color: #fff; /* rule */
+}
+
+#main-section-two > p
+{
+    padding: 1rem 15rem 0 15rem;
+}
+
+/*********************** Main/Section 3/5 -  Brands/3 Grid -  ******************/
+
+#main-section-three
+{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    text-align: center; /* rule */
+    background-color:#f9f9f9; /* rule */
+}
+
+#main-section-three > h2
+{
+    padding: 3rem 0rem;
+}
+
+#main-section-three > div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;      
+}
+
+#main-section-three > div > div > h3,p
+{
+    margin: 1rem 5rem;
+}
+
+/*********************** Main/Section 4/5 -  We Are / 2x3 Grid -  ******************/
+
+#main-section-four
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main-section-four img
+{
+    display:block; 
+    border-radius: 20px;
+    max-width: 100%; 
+    height: auto;
+    
+}
+
+.main-section-four-grid h2
+{
+    padding: 8rem 1rem 1rem 5rem;
+}
+
+/*********************** Main/Section 5/5 -  Ready to Join Team Snap -  *****************/
+
+#main-section-five
+{
+    background-color: #fffc00; /* rule */
+    height: 668px; /* rule */
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#main-section-five > h4
+{
+    padding-top: 16rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    columns: #000000;
+}
+
+#main-section-five > p
+{
+    
+    
+    background-color: #fff;
+    width: 250px;
+    text-align: center;
+    display: inline-block;   
+    /* Rules */ 
+        color: #000;
+        border: none;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-top: 1rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+}
+
+/*********************** Footer Section ******************/
+footer
+{
+    padding: 0 0 0 3rem;
+}
+
+/*********************** Media Queries/Responsive ******************/
+/* Prepared for 1366px or 85em */
+
+/*/ Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px)
+{
+    ul > li
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        text-align: center;
+        font-size: large;
+        
+    }
+    
+
+
+}
+/*/ Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 1024px) { ... }
+
+*/
